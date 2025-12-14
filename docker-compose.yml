@@ -1,0 +1,7 @@
+version: '3'
+services:
+  eventak-app:
+    image: ghcr.io/mariam0ashraf/eventak-web:v1
+    ports:
+      - "8080:80"
+    restart: always
