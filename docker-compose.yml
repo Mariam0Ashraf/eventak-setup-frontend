@@ -1,11 +1,7 @@
-version: '3.8'
-
+version: '3'
 services:
-  frontend:
-    container_name: eventak_frontend
-    build:
-      context: .
-      dockerfile: Dockerfile
+  eventak-app:
+    image: ghcr.io/mariam0ashraf/eventak-web:v1
     ports:
       - "8080:80"
-    restart: unless-stopped
+    restart: always
